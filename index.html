@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현대자동차-캐스퍼</title>
+  <!-- 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <!-- 기본 공통서식 -->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <!-- 스와이퍼 슬라이드 -->
+  <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+
+  <!-- 메인 레이아웃 서식 -->
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+
+ <!-- 폰트어썸 주소 -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- 벤더프리픽스 프리 -->
+  <script src="./script/prefixfree.min.js"></script>
+
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script defer src="./script/main.js"></script>
+  
+</head>
+<body>
+  <!-- 상단 헤더영역 시작 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./img/logo_w.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <!-- 상단내비게이션  -->
+    <nav>
+      <ul class="gnb">
+        <li><a href="#intro" title="소개" class="arctic_scroll">소개</a></li>
+        <li><a href="#test" title="체험하기" class="arctic_scroll">레스토랑</a></li>
+        <li><a href="#event" title="이벤트" class="arctic_scroll">이벤트</a></li>
+        <li><a href="#buy" title="구매안내" class="arctic_scroll">웨딩</a></li>
+        <li><a href="#cs" title="고객지원" class="arctic_scroll">오시는 길</a></li>
+      </ul>
+    </nav>
+
+    <i class="fas fa-user"></i>
+    <i class="fas fa-bell"></i><!-- 알림아이콘 -->
+  </header>
+
+  <!-- 원형 네비게이션 -->
+  <nav id="m_nav">
+    <ul>
+      <li><span class="num">1</span><a href="#intro" title="소개" class="arctic_scroll">소개</a></li>
+      <li><span class="num">2</span><a href="#test" title="체험하기" class="arctic_scroll">레스토랑</a></li>
+      <li><span class="num">3</span><a href="#event" title="이벤트" class="arctic_scroll">이벤트</a></li>
+      <li><span class="num">4</span><a href="#buy" title="구매안내" class="arctic_scroll">웨딩</a></li>
+      <li><span class="num">5</span><a href="#cs" title="고객지원" class="arctic_scroll">오시는 길</a></li>
+    </ul>
+  </nav>
+
+  <!-- 메인콘텐츠 영역 -->
+  <main>
+    <section id="mintro">
+      <h2>캐스퍼 인트로 영상</h2>
+      <article>
+        <h3>MAY DINING</h3>
+        <p>EUROPEAN CONTEMPORARY DINING.</p>
+        <a href="http://maydining.co.kr/menu/" title="메뉴보기">메뉴보기</a>
+        <a href="https://booking.naver.com/booking/6/bizes/71731/items/2508201" title="예약하기">예약하기</a>
+        <a href="http://maydining.co.kr/category/news/events/" title="이벤트">이벤트</a>
+      </article>
+
+      <video muted autoplay loop>
+        <source src="./img/Restaurant.mp4" type="video/webm">
+      </video>
+
+      <a href="#top3" title="다음페이지로 이동" id="next_btn" class="arctic_scroll">아래로 이동</a>
+    </section>
+
+    <section id="top3">
+      <h2>메이다이닝</h2>
+      <p>메이다이닝 소유의 텃밭에서 직접 재배한 유기농 재료로 셰프가 정성껏 요리합니다.</p>
+
+      <div class="swiper top3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="order">
+              <em>01</em>
+              <strong class="title">사계절 자연이 공존하는 명품 다이닝 공간</strong>
+            </div>
+            <img src="./img/intro01.jpg" alt="사진">
+            <div class="detail">
+              <p>최고의 요리는 제철에 나는 식재료를 활용해 만든 요리라는 말이 있듯<br>
+                <strong>메이다이닝에서는 레스토랑 앞</strong>에서 형성 된 <strong>2만평 규모의 시크릿가든에서<br>
+                 나는 다양한 제철 식재료로 요리</strong>합니다.
+              </p>
+              <a href="https://booking.naver.com/booking/6/bizes/71731/items/2508201" title="견적내기" class="price2">예약하기</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="order">
+              <em>02</em>
+              <strong class="title">기억에 남을 특별한 맛이 있습니다.</strong>
+            </div>
+            <img src="./img/intro02.jpg" alt="사진">
+            <div class="detail">
+              <p>메이다이닝의 푸드 컬렉션은 오랫동안 기억에 남을 특별한 다이닝의 경험을 제공합니다.<br>
+                내 사람의 가장 특별한 그 순간, 여러분과 함께 합니다.</p>
+              <a href="https://booking.naver.com/booking/6/bizes/71731/items/2508201" title="견적내기" class="price2">예약하기</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="order">
+              <em>03</em>
+              <strong class="title">SECRET GARDEN 내추럴한 공간, 시크릿가든이 여러분들을 기다립니다.</strong>
+            </div>
+            <img src="./img/intro03.jpg" alt="사진">
+            <div class="detail">
+              <p>메이다이닝의 자랑거리인 시크릿 가든은 <strong>식사 후 영혼의 힐링을 위한 특별 공간</strong>입니다.<br>
+                2만여평 규모로 오직 메이다이닝 고객님만을 위해 지난 40여년간 준비해온 도심속 비밀 정원입니다. </p>
+              <a href="https://booking.naver.com/booking/6/bizes/71731/items/2508201" title="견적내기" class="price2">예약하기</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination2"></div>
+      </div>
+
+    </section>
+
+    <!-- 소개 페이지 -->
+    <section id="intro">
+      <h2>소개</h2>
+      <img src="./img/logom.svg" alt="소개">
+      <strong class="l_title">메이다이닝 로고 중앙의 다섯손가락은 마치 마법사가 마술을 부리듯<br>
+        고객에게 5가지 즐거움(五樂)과 5가지 감각(五感)을<br>
+        충족시켜 드리고자 하는 마음을 형상화한 것 입니다.</strong>
+      <strong class="r_title">특히 엄지와 검지 손가락 사이의 나뭇잎은 메이다이닝 소유의 텃밭에서<br>
+        직접 재배한 유기농 재료로 셰프가 손으로 정성껏 요리하여<br>
+        고객님을 섬기고자 하는 “메이다이닝의 마음”을 표현한 것입니다.</strong>
+    </section>
+
+    <section id="test">
+      <h2>레스토랑</h2>
+      <p class="p01">Open hour : AM 11:30 ~ Close PM 10:00</p>
+      <div class="t_box">
+        <h3>1F<br>RESTAURANT</h3>
+        <p class="p01">특별한 요리 컬렉션과 2만평 규모의 희귀 예술목 정원인(시크릿가든) 어우러진<br>
+          새로운 차원의 유러피안 파인 다이닝 레스토랑입니다.
+        </p>
+        <input type="button" value="메뉴보기" class="btn01">
+      </div>
+
+      <div class="t_box cafe">
+        <h3>2F<br>CAFE NANGMAN</h3>
+        <p class="p01">낭만정원 끝에 펼쳐진 NATURAL CAFE 카페
+          여러분들에게<br>맛있는 차와 커피, 디저트와 함께
+          아름다운 시간을 제공합니다.
+        </p>
+        <input type="button" value="카페전경보기" class="btn01">
+      </div>
+
+    </section>
+
+    <section id="event">
+      <h2>이벤트</h2>
+      <p class="p01">다양한 이벤트&#38;콘서트를 함께 메이다이닝에서 만나보세요.</p>
+
+      <div class="swiper event_s">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" title="바로가기">
+              <img src="./img/ev01.jpg" alt="사진">
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#" title="바로가기">
+              <img src="./img/ev02.jpg" alt="사진">
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#" title="바로가기">
+              <img src="./img/ev03.jpg" alt="사진">
+            </a>
+          </div>
+
+          
+        </div>
+        <div class="swiper-pagination3"></div>
+      </div>
+    </section>
+
+    <section id="buy">
+      <h2>웨딩</h2>
+      <p class="p01">시크릿 가든에서의 마법같은 웨딩</p>
+
+      <h3>서울에서 손꼽히는 이국적이고 아름다운 정원 메이다이닝</h3>
+
+      <ul>
+        <li>
+          <h4>플랫가든 FLAT GARDEN</h4>
+          <img src="./img/wed01.jpg" alt="사진">
+          <p class="p03">플랫가든은 아름다운 알전구로 뒤덮혀<br> 메이다이닝에서
+            새롭게 떠오르는<br> 웨딩 스팟입니다. 평평하게 다져진<br> 바닥으로
+            보다 편리하게 웨딩 및 행사를<br> 진행할 수 있도록한 광장입니다.
+          </p>
+        </li>
+        
+        <li>
+          <h4>힐가든 HILL GARDEN</h4>
+          <img src="./img/wed02.jpg" alt="사진">
+          <p class="p03">비교적 프라이빗하게 진행되는 아름다운<br> 비탈길, 힐가든은
+            숲속 웨딩을 구현하기에<br> 가장 아름다운 스팟 중 하나입니다.<br>
+            넓은 잔디밭에 펼쳐진 시원관 광경과 <br>곳곳의 조명이 눈을 사로잡는 곳입니다.
+          </p>
+        </li>
+
+        <li>
+          <h4>시크릿가든 SECRET GARDEN</h4>
+          <img src="./img/wed03.jpg" alt="사진">
+          <p class="p03">아름다운 웨딩이 가장 많이 열렸던 공간인<br> 시크릿가든은
+            카페쉼터로 가는 길목에<br> 위치한 아늑한 정원으로 이국적인
+            나무들에 둘러쌓여 마법같은 결혼식을 원하시는 <br>분들께서 선호하시는 공간입니다.
+          </p>
+        </li>
+
+      </section>
+        <iframe src="https://www.youtube.com/embed/FWcUez5ZYMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="wedding"></iframe>
+    
+    <section id="cs">
+      <h2>오시는 길</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6315.563995199748!2d127.03502099999999!3d37.67783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a702026016d098f!2z66mU7J20IOycoOufrO2UvOyViCDri6TsnbTri50gKE1heSBFdXJvcGVhbiBEaW5pbmcp!5e0!3m2!1sko!2skr!4v1652118787866!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <ul class="map">
+        <li>MAP으로 보기</li>
+        <li>서울시 도봉구 도봉동 470-3번지(도봉로 169길 202)</li>
+        <li>#네이버지도(링크)<br>
+        <a href="http://naver.me/Ginm1PcU" title="네이버 지도">http://naver.me/Ginm1PcU</a></li>
+        <li>#다음지도(링크)<br>
+        <a href="http://dmaps.kr/3dhua" title="다음 지도">http://dmaps.kr/3dhua</a></li>
+        <li>#T map(티맵)(링크)<br>
+        <a href="https://goo.gl/dwxfO6" title="티맵">https://goo.gl/dwxfO6</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- 푸터영역 -->
+  <footer class="clear">
+    <div class="f_inner">
+      <h2>
+        <a href="index.html" title="하단로고">
+          <img src="./img/logo_w.png" alt="푸터로고">
+        </a>
+      </h2>
+      <nav class="f_lnb">
+        <ul>
+          <li><a href="#" title="이용약관">이용약관</a></li>
+          <li><a href="#" title="개인정보 처리방침">개인정보 처리방침</a></li>
+          <li><a href="#" title="저작권안내">저작권안내</a></li>
+          <li><a href="#" title="공동인증서 안내">공동인증서 안내</a></li>
+        </ul>
+      </nav>
+      <address>
+        사업자등록번호 : 128-19-34886 &nbsp;통신판매업신고번호 : 2022-01546 &nbsp;대표이사 : 한승윤
+        &nbsp;주소 : 서울시 도봉구 도봉동 470-3<br>
+        copyright&copy; MAYDINING, all rights reserved.
+      </address>
+    </div>
+  </footer>
+
+  <!-- 아크틱 스크롤  -->
+  <script src="./script/jquery.arctic_scroll.js"></script>
+  <script src="./script/swiper.js"></script>
+  <script src="./script/jquery.cookie.js"></script>
+  <script>
+    // 아크틱 스크롤
+    $(function(){
+    $(".arctic_scroll").arctic_scroll({
+        speed: 800
+    });
+  });
+    
+    var swiper = new Swiper(".top3", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".top3 .swiper-button-next",
+        prevEl: ".top3 .swiper-button-prev",
+      },
+    });
+
+    var swiper = new Swiper(".event_s", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500, 
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination3",
+          clickable: true,
+      },
+      navigation: {
+        nextEl: ".event_s .swiper-button-next",
+        prevEl: ".event_s .swiper-button-prev",
+      },
+      });
+  
+    // 메인콘텐츠 맨 마지막 랜덤 이미지 배너
+    // 1. 자바스크립트 문법
+    let random = Math.floor(Math.random()*2)+1;
+    console.log(random);
+    document.getElementById('eb').src="./images/banner0"+random+".jpg";
+      
+    // 2. 제이쿼리 문법
+    // $(function(){
+    //   let random = Math.floor(Math.random()*2)+1;
+    //   $('#eb').attr('src','./images/banner0'+randoem+'.jpg');
+    // });
+
+    // 모달레이어
+    let modal = `
+      <div class="modal">
+        <div>
+          <img src="./images/notice.jpg" alt="모달">
+          <input type="checkbox" id="ch"><label for="ch">오늘하루 열지 않음</label>
+          <a href="#" title="닫기" id="c_btn">닫기</a>
+        </div>
+      </div>
+    `;
+
+    $('body').append(modal); //바디태그의 안쪽 뒤에 내용을 추가
+    
+    //1. 현재 브라우저에 쿠키파일이 존재한다면 모달창이 나오지 않게한다.
+    if($.cookie('popup')=='none'){
+      $('.modal').hide();
+    }
+
+    //2. 체크박스에 체크하고 닫기를 누르면 쿠키가 생성되고 모달창이 닫도록 한다.
+    let $ex = $('#ch'); //체크박스 변수
+    function cloaseModal(){ 
+      if($ex.is(':checked')){
+        $.cookie('popup','none',{expires:1,path:'/'}); //쿠키파일을 생성함
+      }
+      $('.modal').hide(); //모달 숨기기
+    }
+
+    // 그냥 닫기 버튼을 누른 경우 cloaseModal함수를 호출하여 쿠키생성 유무를 따진다.
+    $('#c_btn').click(function(){
+      cloaseModal();
+    })
+  </script>
+
+</body>
+</html>
